@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>VANCE art: Request a Commision</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="We aimed to expose the work of rising artists by giving them a platform to display and sell their work.">
+    <meta name="author" content="Alex Vance">
+
+</head>
+
+<body>
+    <!-- Start of the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="Store.html">Store</a></li>
+            <li class="active"><a href="commission.html">Request a Commision</a></li>
+            <li><a href="index.html">About</a></li>
+        </ul>
+    </nav>
+    <!-- Start of the page header -->
+    <header>
+        <span>VANCE art</span>
+    </header>
+
+
+    <!-- Start of the page content -->
+    <main>
+        <h1>Request a Commision</h1>
+        <!--start of about me-->
+        <figure class="aboutme">
+            <img src="images/island_park.webp" alt="A picture of Alex Vance" width="atuo" height="400">
+            <figcaption>Alex Vance</figcaption>
+        </figure>
+
+        <h2>What is a Comission?</h2>
+        <!--insert desctiption of what comissions are-->
+        <p>So… you’re looking to create a stunning portrait, capture a special moment, or simply find something unique
+            to elevate your space. You’ve come to the right place — there’s no better way to bring your vision to life
+            than through paint.<br>
+            <strong>Commissioned artwork</strong> is a custom, one-of-a-kind piece created just for you. It’s a chance
+            to collaborate with an artist to design something that reflects your story, your style, and your space.
+            Whether it’s a gift, a centerpiece for your home, or a way to preserve a meaningful memory, a commissioned
+            painting transforms your ideas into a lasting work of art.<br>
+            When you commission a piece from me, you’ll receive a personalized, hand-painted oil painting tailored to
+            your preferences and specifications. I take great pride in my craft and strive to make the entire process
+            seamless and enjoyable — from our first conversation to the final brushstroke.
+
+        <h2>What I’ll Need to Get Started</h2>
+        <p>To ensure your commissioned artwork meets your expectations, I’ll need a few details from you to get started:
+        </p>
+        <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+                <legend>Customer Information*</legend>
+                <label>First Name*<input type="text" name="fname" required placeholder="First Name"></label>
+                <label>Last Name*<input type="text" name="lname" required placeholder="Last Name"></label>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="801-555-1234"></label>
+                <label>Email<input type="email" name="email" placeholder="email@gmail.com">
+                </label>
+                <label>Instagram<input type="text" name="instagram" placeholder="@yourhandle">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Prefered Contact*</legend>
+                <label><input type="radio" name="method" value="text" required>Text</label>
+                <label><input type="radio" name="method" value="Phone">Phone</label>
+                <label><input type="radio" name="method" value="Email">Email</label>
+                <label><input type="radio" name="method" value="instagram">Instagram</label>
+            </fieldset>
+            <fieldset>
+                <legend>Your Vission*</legend>
+                <p>Describe your vision for the piece. Be as detailed as possible! Include things like:<br>
+                    -potential color pallet<br>
+                    -mood or feeling <br>
+                    -expressions, figures, or scenes<br>
+
+                    And if you’d like, I would love to hear why this piece is meaningful to you!</p>
+                <textarea name="comments" required placeholder="Describe your vision here..."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Demensions</legend>
+                <select name="Demensions">
+                    <option value="none">Please Select</option>
+                    <option value="Small">8x10"-11x16"</option>
+                    <option value="medium">12x16"-16x20"</option>
+                    <option value="large">16x20"-20x30"</option>
+                    <option value="xlarge">20x30"-35x48"</option>
+                    <option value="other">custome size</option>
+                </select>
+                </lable>
+            </fieldset>
+            <fieldset>
+                <legend>Finish preferences</legend>
+                <label><input type="checkbox" name="Framed" value="chosen"> Framed</label>
+                <label><input type="checkbox" name="Varnished finish" value="chosen"> Varnished finish</label>
+                <label><input type="checkbox" name="Rush order" value="chosen"> Rush order</label>
+                <label><input type="checkbox" name="Include background scene" value="chosen"> Include background
+                    scene</label>
+            </fieldset>
+
+ <input type="submit" value="Send Commision Request">
+        </form>
+<br>
+        
+            <p><em><a href="gallery.html">Veiw Work</a></em>
+            <p><a href="https://www.instagram.com/_vanceart/" target="_blank" rel=noopener>instagram</a></p>
+            <!--end of about me-->
+
+            <div class="clear"></div>
+
+
+            <h3>Our Mission</h3>
+            <p>Creating custome and uniqe art work for your home.</p>
+            
+
+
+    </main>
+    <!-- Start of the page footer -->
+    <footer>
+        <p>&copy; 2025 &bull; Alex Vance &bull; <a href="mailto:avance.sub@gmail.com">Email Us</a> &bull; <a
+                href="https://www.instagram.com/_vanceart/" target="_blank" rel="noopener">Instagram</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
