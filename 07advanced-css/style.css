@@ -1,0 +1,331 @@
+/*prevent problems on diffrent browsers*/
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background-color: #f4f4f1;
+}
+
+/* header stuff here */
+header {
+    background-color: #97A6AF;
+    color: #f4f4f1;
+    padding: 1rem 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* small screen navigation */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #5c564e;
+        font-weight: 700;
+         border-bottom: solid 1px #eee;
+    }
+      
+    nav .active a {
+        background-color: #97A6AF;
+        color: white;
+        text-decoration: underline;
+        background-image: linear-gradient(to bottom,#B8C9D1, #7f919a);
+    }
+}
+/* end small screen navigation */
+
+
+/* LARGE screen navigation */
+@media only screen and (min-width: 601px) {
+    nav {
+        background-color: #f4f4f1;
+        display: flex;                /* places logo + links on same line */
+        align-items: center;          /* centers them vertically */
+        justify-content: space-between; /* spaces logo and nav apart */
+        padding: 0.5rem 1rem;
+    }
+
+    nav img {
+        height: 50px;                 /* consistent logo size */
+        width: auto;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;                /* aligns nav items in a row */
+        gap: 1.5rem;                  /* spacing between links */
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        padding: .83rem 1rem;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #5c564e;
+        font-weight: 700;
+    }
+
+    nav li.active a {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 2px;
+    }
+
+    nav li a:hover {
+        color: #97A6AF;
+    }
+}
+/* end LARGE screen navigation */
+
+
+/* main stuff here*/
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #0f1316;
+}
+
+main h2 {
+    color: #0f1316;
+    margin-bottom: .2rem;
+}
+
+main p {
+    margin: 0;
+    color: #313131;
+}
+
+main ol {
+    padding: .5rem 30px;
+    color: #5c564e;
+}
+
+main dl dt {
+    color: #313131;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    color: #5c564e;
+    font-size: .9rem;
+    margin-left: 20px;
+}
+
+main ul li {
+    line-height: 125%;
+    color: #97A6AF;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+    list-style-type: circle;
+}
+
+h3 {
+    color: #0f1316;
+    font-weight: 500;
+    margin-bottom: .2rem;
+}
+
+main a {
+    color: #7f919a;
+    text-decoration: underline;
+    /* optional: removes underline */
+}
+
+main a:hover {
+    text-decoration: underline;
+    /* optional: adds underline on hover */
+    color: #97a6af;
+    /* optional: slightly darker shade on hover */
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+/* main img stuff here*/
+figure.aboutme {
+    margin: 0 10px 0 0;
+    width: 25%;
+    float: left;
+}
+
+figure.aboutme img {
+    width: 100%;
+    height: auto;
+}
+
+figure.aboutme figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+/* Gallery stuff here*/
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    margin-top: .5rem;
+    color: #5c564e;
+}
+/* Gallery image hover effect */
+.gallery img {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 4px; /* optional: soft corners for nicer effect */
+}
+
+.gallery img:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* adds the shadow */
+    transform: scale(1.02); /* optional: subtle zoom on hover */
+}
+
+/* Ensure gallery starts below floated about-me image */
+.gallery {
+    clear: both;
+}
+
+/* Clear floats so Main Gallery starts below About Me */
+.clear {
+    clear: both;
+}
+
+/* form stuff here */
+.myForm fieldset {
+    border: 1px solid #97A6AF;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myForm legend {
+    color: #97A6AF;
+    font-size: .8rem;
+}
+
+.myForm label {
+    margin: .5rem;
+}
+
+.myForm label,
+.myForm select,
+.myForm [type=text],
+.myForm [type=tel],
+.myForm [type=email],
+.myForm textarea {
+    display: block;
+}
+
+.myForm [type=text],
+.myForm [type=tel],
+.myForm [type=email],
+.myForm select,
+.myForm textarea {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+}
+
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: rgba(156, 51, 53, 0.1);
+}
+
+.myForm [type=submit] {
+    background-color: #97A6AF;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: #f4f4f1;
+    margin: 1rem 0 0 1vw;
+}
+
+/* address stuff here*/
+address {
+    color: #0f1316;
+    background-color: #cfc6b3;
+    padding: .5rem;
+    width: 200px;
+    border: 1px solid #0f1316;
+    border-radius: 10px;
+}
+
+address a {
+    color: #7f919a;
+    text-decoration: underline;
+    /* optional: removes underline */
+}
+
+address a:hover {
+    text-decoration: underline;
+    /* optional: adds underline on hover */
+    color: #97a6af;
+    /* optional: slightly darker shade on hover */
+}
+
+/* footer stuff here*/
+footer {
+    background-color: #e1e1e1;
+    text-align: center;
+    color: #024873;
+    padding: 1rem 0;
+
+}
+
+footer a {
+    color: #7f919a;
+    text-decoration: underline;
+    /* optional: removes underline */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    /* optional: adds underline on hover */
+    color: #97a6af;
+    /* optional: slightly darker shade on hover */
+}
+
+footer p {
+    margin: 0;
+    font-size: .8rem;
+    color: #333;
+    letter-spacing: 3px;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
